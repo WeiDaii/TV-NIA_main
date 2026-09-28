@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tvnia"
+version = "1.0.0"
+description = "Clean reproduction package for the TV-NIA framework"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy==1.10.1",
+  "scikit-learn==1.3.2",
+  "torch==2.1.2",
+  "dgl==1.1.2",
+  "pandas==2.3.2",
+  "networkx==3.2.1",
+  "torch-geometric==2.6.1",
+  "torch-sparse==0.6.18",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
